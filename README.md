@@ -5,7 +5,10 @@
 About dancer
 =============
 
-dancer is the best program for...
+Dancer is server automation for the rest of us. 
+  - It's fast. 
+  - It doesn't require anything installed on the server
+  - It can be run from anywhere (statically compiled)
 
 Documentation
 =============
