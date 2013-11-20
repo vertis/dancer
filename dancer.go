@@ -9,4 +9,8 @@
 package dancer
 
 import (
+  "bytes"
+  "fmt"
+  "code.google.com/p/go.crypto/ssh"
+  "log"
 )
