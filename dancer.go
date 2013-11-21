@@ -6,11 +6,15 @@
 
 
 // Package dancer does ....
-package dancer
+package main
 
 import (
-  "bytes"
+  // "bytes"
   "fmt"
-  "code.google.com/p/go.crypto/ssh"
-  "log"
+  // "code.google.com/p/go.crypto/ssh"
+  // "log"
 )
+
+func main() {
+  fmt.Println("usage: dancer <host> <recipes>,...")
+}
