@@ -11,10 +11,18 @@ package main
 import (
   // "bytes"
   "fmt"
+  "flag"
   // "code.google.com/p/go.crypto/ssh"
   // "log"
 )
 
+var hostsFlag = flag.String("hosts", "", "The comma separated list of hosts to work on")
+
+func init() {
+  flag.StringVar(hostsFlag, "h", "", "The comma separated list of hosts to work on")
+}
+
 func main() {
-  fmt.Println("usage: dancer <host> <recipes>,...")
+  flag.Parse()
+  fmt.Println(*hostsFlag)
 }
