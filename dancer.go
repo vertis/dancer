@@ -6,23 +6,12 @@
 
 
 // Package dancer does ....
-package main
+package dancer
 
-import (
-  // "bytes"
-  "fmt"
-  "flag"
-  // "code.google.com/p/go.crypto/ssh"
-  // "log"
-)
-
-var hostsFlag = flag.String("hosts", "", "The comma separated list of hosts to work on")
-
-func init() {
-  flag.StringVar(hostsFlag, "h", "", "The comma separated list of hosts to work on")
+type Dancer struct{
+	Hosts []string
 }
 
-func main() {
-  flag.Parse()
-  fmt.Println(*hostsFlag)
+func NewDancer() *Dancer {
+  return &Dancer{Hosts: []string{} }
 }

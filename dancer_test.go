@@ -1,17 +1,19 @@
-package dancer
-
-/*  Filename:    dancer_test.go
- *  Author:      Luke Chadwick <me@vertis.io>
- *  Created:     2013-11-19 13:08:03.150459756 +1100 EST
- *  Description: Main test file for dancer
- */
+package dancer_test
 
 import (
-    "testing"
+	. "github.com/vertis/dancer"
+	. "github.com/onsi/ginkgo"
+	. "github.com/onsi/gomega"
 )
 
-
-func TestDancer(t *testing.T) {
-
-}
-
+var _ = Describe("Dancer", func() {
+  var dancer *Dancer
+  
+  BeforeEach(func() {
+      dancer = NewDancer()
+  })
+  
+  It("should have an empty set of hosts", func() {
+      Expect(dancer.Hosts).To(Equal([]string{}))
+  })    
+})
